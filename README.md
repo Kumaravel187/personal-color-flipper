@@ -6,6 +6,8 @@ This is a simple web application that allows the user to view three different co
 - Hex consists of hexadecimal color values
 - Gradient consists of gradient hexadecimal color values
 
+Note: While the colors generated are in hexa code, the CSS properties displayed are in RGB values as they are automatically being converted in the CSS properties. 
+
 ## Features
 
 - Three different color pickers.
@@ -51,7 +53,7 @@ todo-app/
 
 ## Links
 
-Project URL:
+Project URL: https://magenta-naiad-e67d61.netlify.app/
 
 ## Contributing
 
