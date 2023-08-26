@@ -25,7 +25,7 @@ btnEl.addEventListener("click", function () {
   document.body.style.backgroundColor = colorArray[colorGenerated];
 
   // Update the text content of the colorEl with the generated color name
-  colorEl.textContent = colorArray[colorGenerated];
+  colorEl.textContent = document.body.style.backgroundColor;
 });
 
 // Function to generate a random index for the colorArray

@@ -32,5 +32,5 @@ btnEl.addEventListener("click", function () {
   document.body.style.backgroundColor = randomHex;
 
   // Update the text content of the colorEl with the generated hex color code
-  colorEl.textContent = randomHex;
+  colorEl.textContent = document.body.style.backgroundColor;
 });
