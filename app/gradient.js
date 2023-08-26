@@ -1,5 +1,7 @@
 // Get the button element with the ID "btn"
 const btnEl = document.getElementById("btn");
+// Get the element with the class "color"
+const colorEl = document.querySelector(".color");
 
 // Array of characters and numbers used for generating hex color codes
 const hexArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
@@ -31,4 +33,6 @@ btnEl.addEventListener("click", function () {
 
   // Set the background using a linear gradient
   document.body.style.backgroundImage = `linear-gradient(to right top, ${randomHexValueOne}, ${randomHexValueTwo}, ${randomHexValueThree}, ${randomHexValueFour}, ${randomHexValueFive})`;
+
+  colorEl.textContent = document.body.style.backgroundImage;
 });
