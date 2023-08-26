@@ -1,1 +1,139 @@
-/*# sourceMappingURL=styles.css.map */
+/* Set the base styling for the entire HTML document */
+html {
+  box-sizing: border-box;
+  font-size: 100%; /* Reset font size for consistent sizing */
+}
+
+/* Apply the 'box-sizing' property to all elements and their pseudo-elements */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Inherit the 'box-sizing' property from the parent */
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the body of the webpage */
+body {
+  /* min-height: 100vh; /* Ensure the body covers at least the viewport height */
+  margin: 0; /* Remove default margin to avoid unexpected spacing */
+  padding: 0; /* Vertical and horizontal padding for the content area */
+  /* font-family: ; /* Set the primary font family */
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.1rem;
+  min-height: 100vh;
+}
+
+/* Mobile view */
+@media (max-width: 47.9375rem) {
+  body nav .nav-center {
+    justify-content: space-between;
+  }
+  body nav .nav-center h4 {
+    font-size: 0.9rem;
+  }
+  body nav .nav-center li {
+    font-size: 0.65rem;
+  }
+  body main .container h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  body main .container h2 .color {
+    color: lime;
+  }
+}
+/* Styling for the navigation */
+nav {
+  padding: 1rem;
+  box-shadow: 0px 15px 10px 5px rgba(0, 0, 0, 0.75);
+  /* Styling for the navigation center section */
+}
+nav .nav-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Styling for navigation header */
+  /* Styling for navigation links */
+}
+nav .nav-center h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: green;
+}
+nav .nav-center .nav-links li {
+  list-style-type: none;
+  display: inline-block;
+  /* Styling for the last child of navigation links */
+  /* Styling for link hover effect */
+  /* Styling for the link */
+}
+nav .nav-center .nav-links li:nth-child(2), nav .nav-center .nav-links li:last-child {
+  margin-left: 1rem;
+}
+nav .nav-center .nav-links li .cool-link:hover::after {
+  width: 100%;
+}
+nav .nav-center .nav-links li a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+  /* Styling for the link underline effect */
+}
+nav .nav-center .nav-links li a::after {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease-in-out;
+}
+nav .nav-center .nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Styling for the main content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Styling for the content container */
+}
+main .container {
+  padding: 3rem;
+  margin: 0 auto;
+  /* Styling for heading */
+  /* Styling for buttons */
+}
+main .container h2 {
+  background-color: #000;
+  color: whitesmoke;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  /* Styling for nested color class */
+}
+main .container h2 .color {
+  color: red;
+}
+main .container button {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.3s ease-in-out;
+}
+main .container button:hover {
+  background-color: black;
+  color: whitesmoke;
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=styles.css.map */

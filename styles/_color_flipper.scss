@@ -1,0 +1,112 @@
+/* Styling for the navigation */
+nav {
+  padding: 1rem;
+  -webkit-box-shadow: 0px 15px 10px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 15px 10px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 15px 10px 5px rgba(0, 0, 0, 0.75);
+
+  /* Styling for the navigation center section */
+  .nav-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* Styling for navigation header */
+    h4 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: green;
+    }
+
+    /* Styling for navigation links */
+    .nav-links {
+      li {
+        list-style-type: none;
+        display: inline-block;
+
+        /* Styling for the last child of navigation links */
+        &:nth-child(2),
+        &:last-child {
+          margin-left: 1rem;
+        }
+
+        /* Styling for link hover effect */
+        .cool-link:hover::after {
+          width: 100%;
+        }
+
+        /* Styling for the link */
+        a {
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
+          color: black;
+          font-weight: 500;
+
+          /* Styling for the link underline effect */
+          &::after {
+            content: "";
+            display: block;
+            width: 0.5rem;
+            height: 2px;
+            background: #000;
+            transition: width 0.3s ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Styling for the main content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* Styling for the content container */
+  .container {
+    padding: 3rem;
+    margin: 0 auto;
+
+    /* Styling for heading */
+    h2 {
+      background-color: #000;
+      color: whitesmoke;
+      border-radius: 1rem;
+      padding: 1.5rem 2rem;
+
+      /* Styling for nested color class */
+      .color {
+        color: red;
+      }
+    }
+
+    /* Styling for buttons */
+    button {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.5rem 1rem;
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background-color: #fff;
+      color: black;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-family: "Roboto Mono", monospace;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: black;
+        color: whitesmoke;
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
